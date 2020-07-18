@@ -20,16 +20,14 @@ a {
   height: 100vh;
   background-image: url(../src/imgs/img-header.png);
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .Icon-React {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50px;
+  left: 50px;
   height: 100px;
   width: 100px;
-  margin: 50px;
   background-image: url(../src/imgs/icon-react.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,11 +35,11 @@ a {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   color: #fff;
   text-transform: uppercase;
   padding: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -54,7 +52,7 @@ h2 {
   color: #fff;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 /* *** NAVBAR *** COMPONENT NAVBAR.JSX */
