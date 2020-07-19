@@ -1,4 +1,7 @@
 import React from 'react';
+import whireimg from '../imgs/whire.png';
+import cvIcon from '../imgs/cv-icon.png';
+import cv from '../download/CV-EVRARDCedric.pdf';
 
 class Aboutme extends React.Component {
     render() {
@@ -15,13 +18,34 @@ class Aboutme extends React.Component {
                         </article>
                         <article className="card">
                             <p>
-
+                            <span>Avant de me lancer dans le développement Web, j'étais Barman.</span> En 2009, j’ai obtenu un Bac Technologique Hôtelier à Gérardmer dans le Lycée Hôtelier J.B.S Chardin. Cela fait aujourd’hui 10 ans que j’exerce le métier de barman. J’ai eu la chance d’avoir beaucoup d’expériences et de statuts différents. J’ai été salarié en CDI, CDD, Extra, Saisonnier mais également gérant d’une SARL. 
                             </p>
                             <div className="whire">
-                                <img src="" alt=""/>
+                                <p><span>N'hésitez pas à visiter ma page Whire où vous en apprendrez plus sur moi.</span> Cliquez sur le logo !</p>
+                                <a href="https://www.whire.me/@cdricart" target="_blank">
+                                    <img src={ whireimg } alt="Whire"/>
+                                </a>
                             </div>
                         </article>
                     
+                 </div>
+
+                 <div className="wrapper-exp">
+                     <article className="experience">
+                        <div className="listExp">
+                            <ul>
+                                <li><span>In progress</span> - Développeur Intégrateur Web - <span>IFOCOP</span></li>
+                                <li><span>Octobre 2019 : Mai 2020</span> - Barman - <span>Le Petit Bain</span></li>
+                                <li><span>Mars 2019 : Octobre 2019</span> - Barman - <span>Corcoran's</span></li>
+                                <li><span>Avril 2017 : Février 2019</span> - Barman - <span>Le Lucernaire</span></li>
+                            </ul>
+                        </div>
+                        <div className="cv">
+                            <a href={ cv } target="_blank">
+                                <img src={ cvIcon } alt="Mon Cv"/>
+                            </a>
+                        </div>
+                     </article>
                  </div>
 
              </div>

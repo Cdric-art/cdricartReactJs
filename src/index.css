@@ -66,8 +66,8 @@ h2 {
 
 /* *** MAIN *** COMPONENT MAIN.JSX */
 .Main {
-  height: 100vh;
   background-color: #04ADE2;
+  padding-bottom: 100px;
 }
 
 /* *** NAVBAR *** SOUS-COMPONENT NAVBAR.JSX de MAIN.JSX */
@@ -133,7 +133,6 @@ h2 {
 
 .card {
   width: 350px;
-  height: 500px;
   background-color: #23232ebd;
   border-radius: 3px;
   box-shadow: 1px 1px 8px 0px rgba(35,35,46,0.5);
@@ -153,7 +152,7 @@ h2 {
 .card p {
   font-weight: 300;
   line-height: 1.5rem;
-  padding: 10px 20px 20px 20px;
+  padding: 15px 20px 20px 20px;
 }
 
 .card p span {
@@ -161,7 +160,64 @@ h2 {
   font-weight: 400;
 }
 
+.whire p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
+.whire img {
+  background-size: cover;
+  background-color: var(--colorWhite);
+  border-radius: 50%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+/* CARD-EXP * Expérience professionnelle * Cv pdf */
+
+.wrapper-exp {
+  width: 80vW;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  color: var(--colorWhite);
+}
+
+.experience {
+  background-color: #23232ebd;
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px 0px rgba(35,35,46,0.5);
+  text-align: center;
+}
+
+.listExp ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.listExp ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.listExp ul li span {
+  color: #04ADE2;
+  font-weight: 700;
+}
+
+.cv {
+  padding-bottom: 10px;
+}
+
+.cv img {
+  background-color: var(--colorWhite);
+  border-radius: 3px;
+  transition: all .4s;
+}
+
+.cv img:hover {
+  transform: scale(1.4);
+}
 
 
 
@@ -170,6 +226,7 @@ h2 {
 
 @media only screen and (max-width: 868px) {
 
+  /* *** CARD *** */
   .wrapper-card {
     flex-wrap: wrap;
     margin-top: 20px;
