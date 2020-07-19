@@ -3,10 +3,11 @@ import whireimg from '../imgs/whire.png';
 import cvIcon from '../imgs/cv-icon.png';
 import cv from '../download/CV-EVRARDCedric.pdf';
 
+
 class Aboutme extends React.Component {
     render() {
         return (
-             <div className="Aboutme container-fluid">
+             <div className="Aboutme">
 
                  <div id="about" className="wrapper-card">
 
