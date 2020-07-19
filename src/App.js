@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../src/components/header';
-import Navbar from '../src/components/navbar';
+import Main from '../src/components/main';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       
       <Header />
-      <Navbar />
+      <Main />
 
     </div>
   );

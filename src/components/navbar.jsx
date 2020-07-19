@@ -1,12 +1,19 @@
 import React from 'react';
 
-function Navbar () {
+class Navbar extends React.Component {
+    render () {
+        return (
+            <nav className="Navbar">
 
-    return (
-        <div className="Navbar">
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">My skills</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
 
-        </div>
-    )
+            </nav>
+        )
+    }
 }
 
 export default Navbar;
