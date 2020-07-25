@@ -222,6 +222,15 @@ h2 {
 }
 
 
+/* *** SKILLS SOUS-COMPONENT DE HEADER.JSX *** */
+
+.Skills {
+  height: 100vh;
+  background-color: #04ADE2;
+}
+
+
+
 
 
 
