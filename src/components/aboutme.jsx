@@ -36,9 +36,9 @@ class Aboutme extends React.Component {
                         <div className="listExp">
                             <ul>
                                 <li><span>In progress</span> - Développeur Intégrateur Web - <span>IFOCOP</span></li>
-                                <li><span>Octobre 2019 : Mai 2020</span> - Barman - <span>Le Petit Bain</span></li>
-                                <li><span>Mars 2019 : Octobre 2019</span> - Barman - <span>Corcoran's</span></li>
-                                <li><span>Avril 2017 : Février 2019</span> - Barman - <span>Le Lucernaire</span></li>
+                                <li><span>In progress</span> - ReactJs - <span>OpenClassRooms</span></li>
+                                <li><span>Janvier 2020 : Mars 2020</span> - JavaScript - <span>Udemy, OpenClassRooms</span></li>
+                                <li><span>Octobre 2019 : Janvier 2020</span> - Développeur Intégrateur Web - <span>Udemy</span></li>
                             </ul>
                         </div>
                         <div className="cv">
