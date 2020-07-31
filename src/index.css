@@ -41,6 +41,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .5;
+  animation: linear infinite 8s rotateIcon;
 }
 
 h1 {
@@ -329,7 +330,7 @@ h2 {
 /* *** FOOTER SOUS-COMPONENT DE APP.JS *** */
 
 .Footer {
-  background-image: url(../src/imgs/imageFondContact.png);
+  background-image: url(../src/imgs/space.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -341,7 +342,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--colorWhite);
+  color: #23232ebd;
   font-size: 1.7rem;
   line-height: 3rem;
   letter-spacing: 1.5px;
@@ -349,7 +350,7 @@ h2 {
 }
 
 .info a {
-  color: #04ADE2;
+  color: #23232ebd;
   font-weight: bold;
 }
 
@@ -361,8 +362,8 @@ h2 {
 }
 
 .reseau img {
-  height: 45px;
-  width: 45px;
+  height: 55px;
+  width: 55px;
 }
 
 .whire-link {
@@ -392,6 +393,18 @@ h2 {
   font-style: italic;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+
+@keyframes rotateIcon {
+
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
 }
 
 
