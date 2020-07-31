@@ -440,11 +440,11 @@ h2 {
   /* *** CARD *** */
   .wrapper-card {
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .card {
-    margin: 20px 0;
+    margin: 40px 0;
   }
 
 }
