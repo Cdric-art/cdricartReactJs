@@ -1,6 +1,6 @@
 import React from 'react';
 import Linkedin from '../imgs/linkedin.png';
-import Whire from '../imgs/whire.png';
+import Github from '../imgs/github.png';
 import Twitter from '../imgs/twitter.png';
 
 function Footer () {
@@ -18,9 +18,9 @@ function Footer () {
                         <img src={ Linkedin } alt="Icon Linkedin"/>
                     </a>
                 </div>
-                <div className="whire-link">
-                    <a href="https://www.whire.me/@cdricart" target="_blank">
-                        <img src={ Whire } alt="Icon Whire"/>
+                <div className="github">
+                    <a href="https://github.com/Cdric-art" target="_blank">
+                        <img src={ Github } alt="Icon Github"/>
                     </a>
                 </div>
                 <div className="twitter">
