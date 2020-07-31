@@ -248,10 +248,18 @@ h2 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-image: url(../src/imgs/dev.png);
-  background-repeat: no-repeat;
-  background-position: 10px 10px;
-  background-size: 11% 30%;
+}
+
+.React {
+  position: relative;
+}
+
+.Card-Skill img {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: 5%;
+  animation: linear infinite 4s iconStar;
 }
 
 .Card-Skill h3 {
@@ -318,7 +326,7 @@ h2 {
 
 .Card-Skill .bar-6::after {
   content: '';
-  width: 25%;
+  width: 35%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -345,13 +353,14 @@ h2 {
   color: #23232ebd;
   font-size: 1.7rem;
   line-height: 3rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.9px;
   height: 300px;
 }
 
 .info a {
   color: #23232ebd;
   font-weight: bold;
+  padding: 20px;
 }
 
 .reseau {
@@ -364,6 +373,12 @@ h2 {
 .reseau img {
   height: 55px;
   width: 55px;
+  transition: all .4s;
+  animation: ease-in-out infinite 3s iconGray;
+}
+
+.reseau img:hover {
+  transform: scale(1.1);
 }
 
 .whire-link {
@@ -387,8 +402,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, .05);
-  color: var(--colorWhite);
+  background-color: #B8E9F0;
+  color: #23232ebd;
   font-size: .7rem;
   font-style: italic;
   padding-left: 20px;
@@ -397,14 +412,42 @@ h2 {
 
 
 @keyframes rotateIcon {
-
   from {
     transform: rotate(0);
   }
   to {
     transform: rotate(360deg);
   }
+}
 
+@keyframes iconStar {
+  from {
+    filter: grayscale(100%);
+    transform: rotate(0deg);
+  }
+  50% {
+    filter: grayscale(0%);
+    transform: rotate(180deg);
+  }
+  to {
+    filter: grayscale(100%);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes iconGray {
+  from {
+    filter: grayscale(100%);
+    transform: scale(1);
+  }
+  50% {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+  }
+  to {
+    filter: grayscale(100%);
+    transform: scale(1);
+  }
 }
 
 
