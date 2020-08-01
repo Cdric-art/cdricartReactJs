@@ -14,17 +14,17 @@ function Footer () {
             </div>
             <div className="reseau">
                 <div className="linkedin">
-                    <a href="https://www.linkedin.com/in/cdricart/" target="_blank">
+                    <a href="https://www.linkedin.com/in/cdricart/" rel="noopener noreferrer" target="_blank">
                         <img src={ Linkedin } alt="Icon Linkedin"/>
                     </a>
                 </div>
                 <div className="github">
-                    <a href="https://github.com/Cdric-art" target="_blank">
+                    <a href="https://github.com/Cdric-art" rel="noopener noreferrer" target="_blank">
                         <img src={ Github } alt="Icon Github"/>
                     </a>
                 </div>
                 <div className="twitter">
-                    <a href="https://twitter.com/Cdric_art" target="_blank">
+                    <a href="https://twitter.com/Cdric_art" rel="noopener noreferrer" target="_blank">
                         <img src={ Twitter } alt="Icon Twitter"/>
                     </a>
                 </div>

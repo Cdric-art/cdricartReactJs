@@ -23,7 +23,7 @@ class Aboutme extends React.Component {
                             </p>
                             <div className="whire">
                                 <p><span>N'hésitez pas à visiter ma page Whire où vous en apprendrez plus sur moi.</span> Cliquez sur le logo !</p>
-                                <a href="https://www.whire.me/@cdricart" target="_blank">
+                                <a href="https://www.whire.me/@cdricart" rel="noopener noreferrer" target="_blank">
                                     <img src={ whireimg } alt="Whire"/>
                                 </a>
                             </div>
@@ -42,7 +42,7 @@ class Aboutme extends React.Component {
                             </ul>
                         </div>
                         <div className="cv">
-                            <a href={ cv } target="_blank">
+                            <a href={ cv } rel="noopener noreferrer" target="_blank">
                                 <img src={ cvIcon } alt="Mon Cv"/>
                             </a>
                         </div>
