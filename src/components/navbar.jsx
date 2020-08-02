@@ -8,6 +8,7 @@ class Navbar extends React.Component {
                 <ul>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#skills">My skills</a></li>
+                    <li><a href="#projets">My projects</a></li>
                     <li><a href="#contact">Contact me</a></li>
                 </ul>
 

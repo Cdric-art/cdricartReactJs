@@ -116,6 +116,11 @@ h2 {
   border-bottom: solid 1px var(--colorWhite);
 }
 
+.Navbar ul li:nth-child(3) {
+  border-top: solid 1px var(--colorWhite);
+  border-bottom: solid 1px var(--colorWhite);
+}
+
 .Navbar ul li:last-child {
   border-right: solid 1px var(--colorWhite);
   border-bottom: solid 1px var(--colorWhite);
@@ -349,6 +354,69 @@ h2 {
   border-radius: 3px;
   background-color: var(--colorWhite);
 }
+
+
+/* *** MY PROJECTS *** SOUS-COMPONENT DE MAIN.JSX */
+
+#projets {
+  height: 800px;
+  overflow: hidden;
+}
+
+.wrapper-projets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #23232ebd;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 0px rgba(35, 35, 46, 1);
+  max-width: 700px;
+  margin: 50px auto 100px auto;
+  padding: 50px;
+}
+
+.wrapper-projets img {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, .1);
+  transition: all .4s;
+}
+
+.wrapper-projets img:hover {
+  transform: scale(1.1);
+}
+
+.text p {
+  color: var(--colorWhite);
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: 40px 20px 20px 20px;
+}
+
+.text p span {
+  color: #04ADE2;
+  font-weight: 400;
+}
+
+.arrow {
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.arrow img {
+  width: 50px;
+  height: 50px;
+  transition: all .4s;
+}
+
+.arrow img:hover {
+  transform: scale(1.2);
+}
+
 
 /* *** FOOTER SOUS-COMPONENT DE APP.JS *** */
 
