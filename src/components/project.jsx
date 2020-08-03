@@ -1,14 +1,43 @@
 import React from 'react';
 import Arrow from '../imgs/arrow.png';
-import Card3d from '../imgs/card3d.gif';
-import Fiasco from '../imgs/fiasco.gif';
-import Reseau from '../imgs/reseau.gif';
+
 
 class Project extends React.Component {
 
     constructor (props) {
         super(props)
+        const img0 = require('../imgs/fiasco.gif');
+        const img1 = require('../imgs/card3d.gif');
+        const img2 = require('../imgs/reseau.gif');
 
+        this.Change = this.Change.bind(this)
+
+        this.state = {
+            index: 0,
+            imgList: [img0, img1, img2],
+            indexP: 0,
+            paragraph: [
+                <p><span>Création du Front-End</span> d'un site entièrement responsive pour un restaurant. Ce projet est une création proposée à l'issue d'une <span>formation de Grafikart.</span></p>,
+                <p><span>Création d'une Card 3D</span> proposée par une formation en ligne sur les Translate et les Transform en CSS.</p>,
+                <p><span>Création du Front-End d'un site</span> entièrement responsive
+                pour un reseau social. Ce projet est une création recommandée à 
+                l'issue d'une <span>formation par Udemy.</span></p>
+             ]
+        }
+    }
+
+    Change () { 
+        if (this.state.index + 1 === this.state.imgList.length || this.state.indexP + 1 === this.state.paragraph.length) {
+            this.setState ({
+                index: 0,
+                indexP: 0
+            })
+        } else {
+            this.setState({
+                index: this.state.index + 1,
+                indexP: this.state.indexP + 1
+            })
+        }
     }
 
     render () {
@@ -16,45 +45,16 @@ class Project extends React.Component {
         return (
             <div id="projets">
                 <div className="arrow">
-                    <img src={ Arrow } alt="Arrow right"/>
+                    <img onClick={ this.Change } src={ Arrow } alt="Arrow right"/>
                 </div>
-                <div>
-                    <div id="projet1" className="wrapper-projets">
-                        <div className="projet">
-                            <img src={ Fiasco } alt="Projet 1"/>
-                        </div>
-                        <div className="text">
-                            <p>
-                            <span>Création du Front-End</span> d'un site entièrement responsive
-                            pour un restaurant. Ce projet est une création proposée à 
-                            l'issue d'une <span>formation de Grafikart.</span>
-                            </p>
-                        </div>
+                <div className="wrapper-projets">
+                    <div>
+                        <img id="src" src={ this.state.imgList[this.state.index] } alt="Projet 1"/>
                     </div>
-                    <div id="projet2" className="wrapper-projets projet-none">
-                        <div className="projet">
-                            <img src={ Card3d } alt="Projet 2"/>
-                        </div>
-                        <div className="text">
-                            <p>
-                            <span>Création d'une Card 3D</span> proposée par une formation en ligne sur
-                            les Translate et les Transform en CSS.
-                            </p>
-                        </div>
+                    <div className="text">
+                        { this.state.paragraph[this.state.indexP] }
                     </div>
-                    <div id="projet3" className="wrapper-projets projet-none">
-                        <div className="projet">
-                            <img src={ Reseau } alt="Projet 3"/>
-                        </div>
-                        <div className="text">
-                            <p>
-                            <span>Création du Front-End</span> d'un site entièrement responsive
-                            pour un reseau social. Ce projet est une création recommandée à 
-                            l'issue d'une <span>Création du Front-End</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                </div>       
             </div>
         )
     }

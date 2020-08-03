@@ -359,11 +359,11 @@ h2 {
 /* *** MY PROJECTS *** SOUS-COMPONENT DE MAIN.JSX */
 
 #projets {
-  height: 800px;
-  overflow: hidden;
+  height: 100vh;
 }
 
 .wrapper-projets {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -372,8 +372,20 @@ h2 {
   border-radius: 5px;
   box-shadow: 1px 1px 8px 0px rgba(35, 35, 46, 1);
   max-width: 700px;
-  margin: 50px auto 100px auto;
+  margin: 70px auto 100px auto;
   padding: 50px;
+  z-index: 1;
+}
+
+.wrapper-projets::before {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-image: url(../src/imgs/fusee.png);
+  transform: rotate(-45deg);
+  animation: ease-in-out infinite 7s fusee-projet;
+  z-index: -1;
 }
 
 .wrapper-projets img {
@@ -403,7 +415,7 @@ h2 {
 .arrow {
   width: 50px;
   margin: 0 auto;
-  margin-top: 50px;
+  padding-top: 80px;
   cursor: pointer;
 }
 
@@ -530,6 +542,34 @@ h2 {
   to {
     opacity: 0;
     bottom: 500px;
+  }
+}
+
+@keyframes fusee-projet {
+  from {
+    opacity: .1;
+    bottom: -200px;
+    left: -50px;
+  }
+  25% {
+    opacity: 1;
+    left: -50px;
+  }
+  50% {
+    left: 50px;
+    bottom: 200px;
+    opacity: 0.7;
+    transform: rotate(20deg);
+  }
+  75% {
+    opacity: 1;
+    left: 640px;
+    bottom: 350px;
+  }
+  to {
+    opacity: .1;
+    bottom: 650px;
+    left: 730px;
   }
 }
 
