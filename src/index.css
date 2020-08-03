@@ -360,6 +360,7 @@ h2 {
 
 #projets {
   height: 100vh;
+  overflow: hidden;
 }
 
 .wrapper-projets {
@@ -585,6 +586,10 @@ h2 {
     font-size: 2.2rem;
   }
 
+  .Navbar ul li {
+    font-size: .75rem;
+  }
+
   .Mail {
     padding: 20px;
     margin-top: 10px;
@@ -608,6 +613,13 @@ h2 {
   /* *** ANIME FUSEE *** */
   .wrapper-card::before {
     display: none;
+  }
+  /* .wrapper-projets::before {
+    display: none;
+  } */
+
+  #projets {
+    height: 900px;
   }
 
 }
