@@ -41,7 +41,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .5;
-  animation: linear infinite 8s rotateIcon;
+  animation: ease-in-out infinite 8s rotateIcon;
 }
 
 h1 {
