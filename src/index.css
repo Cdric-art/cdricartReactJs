@@ -359,7 +359,6 @@ h2 {
 /* *** MY PROJECTS *** SOUS-COMPONENT DE MAIN.JSX */
 
 #projets {
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -446,8 +445,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
   margin-bottom: 50px;
+  padding: 20px;
   background-color: #23232ebd;
   color: var(--colorWhite);
   font-size: 1.7rem;
