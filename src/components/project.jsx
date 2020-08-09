@@ -9,19 +9,22 @@ class Project extends React.Component {
         const img0 = require('../imgs/fiasco.gif');
         const img1 = require('../imgs/card3d.gif');
         const img2 = require('../imgs/reseau.gif');
+        const img3 = require('../imgs/hotelcop.gif');
 
         this.Change = this.Change.bind(this)
 
         this.state = {
             index: 0,
-            imgList: [img0, img1, img2],
+            imgList: [img0, img1, img2, img3],
             indexP: 0,
             paragraph: [
                 <p><span>Création du Front-End</span> d'un site entièrement responsive pour un restaurant. Ce projet est une création proposée à l'issue d'une <span>formation de Grafikart.</span></p>,
                 <p><span>Création d'une Card 3D</span> proposée par une formation en ligne sur les Translate et les Transform en CSS.</p>,
                 <p><span>Création du Front-End d'un site</span> entièrement responsive
-                pour un reseau social. Ce projet est une création recommandée à 
-                l'issue d'une <span>formation par Udemy.</span></p>
+                pour un réseau social. Ce projet est une création recommandée à
+                l'issue d'une <span>formation de Udemy.</span></p>,
+                <p><span>Premier projet Front-End</span> entièrement responsive, réalisé dans le
+                cadre de ma <span>formation de Développeur Intégrateur Web chez IFOCOP</span></p>
              ]
         }
     }
