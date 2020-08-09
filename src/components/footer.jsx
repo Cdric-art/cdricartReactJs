@@ -2,6 +2,7 @@ import React from 'react';
 import Linkedin from '../imgs/linkedin.png';
 import Github from '../imgs/github.png';
 import Twitter from '../imgs/twitter.png';
+import ArrowUp from '../imgs/arrow.png';
 
 function Footer () {
 
@@ -28,6 +29,11 @@ function Footer () {
                         <img src={ Twitter } alt="Icon Twitter"/>
                     </a>
                 </div>
+            </div>
+            <div className="arrow-up">
+                <a href={"index.html"}>
+                    <img src={ ArrowUp } alt="Arrow Up"/>
+                </a>
             </div>
             <div className="copy">
                 <p>&copy; Created by Cdric_art</p>
