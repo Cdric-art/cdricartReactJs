@@ -460,6 +460,94 @@ h2 {
   padding: 20px;
 }
 
+.info .btn-modal {
+  color: var(--colorWhite);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 0 rgba(255, 255, 255, .5);
+  transition: all .4s;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.info .btn-modal:hover {
+  color: var(--colorBlack);
+  background: var(--colorWhite);
+}
+
+.modal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #23232ebd;
+  z-index: 200;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.form-modal input {
+  margin: 15px 0;
+  padding: 7px 10px;
+  color: var(--colorBlack);
+  background-color: rgba(255, 255, 255, .3);
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 0 rgba(255, 255, 255, .5);
+}
+
+.form-modal input[type="email"] {
+  width: 300px;
+}
+
+.form-modal textarea {
+  padding: 7px 10px;
+  margin: 20px 0 50px 0;
+  color: var(--colorBlack);
+  background-color: rgba(255, 255, 255, .3);
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 0 rgba(255, 255, 255, .5);
+}
+
+.form-modal input:focus,
+.form-modal textarea:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, .8);
+}
+
+.form-modal p {
+  color: var(--colorWhite);
+  font-size: .55rem;
+  max-width: 300px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.close {
+  position: absolute;
+  right: 3%;
+  top: 22%;
+  height: 20px;
+  width: 20px;
+}
+
+.close img {
+  box-shadow: 1px 1px 8px 0 rgba(255, 255, 255, .5);
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+
 .reseau {
   display: flex;
   justify-content: space-around;
@@ -605,6 +693,10 @@ h2 {
   .Mail {
     padding: 20px;
     margin-top: 10px;
+  }
+
+  .experience {
+    background-attachment: initial;
   }
 
 }
