@@ -497,12 +497,12 @@ h2 {
 
 .form-modal input {
   margin: 15px 0;
-  padding: 7px 10px;
-  color: var(--colorBlack);
-  background-color: rgba(255, 255, 255, .3);
+  padding: 8px 10px;
+  color: var(--colorWhite);
+  background: transparent;
   border: 1px solid rgba(255, 255, 255, .3);
   border-radius: 5px;
-  box-shadow: 1px 1px 8px 0 rgba(255, 255, 255, .5);
+  box-shadow: 1px 1px 4px 0 rgba(255, 255, 255, .5);
 }
 
 .form-modal input[type="email"] {
@@ -510,19 +510,19 @@ h2 {
 }
 
 .form-modal textarea {
-  padding: 7px 10px;
+  padding: 8px 10px;
   margin: 20px 0 50px 0;
-  color: var(--colorBlack);
-  background-color: rgba(255, 255, 255, .3);
+  color: var(--colorWhite);
+  background: transparent;
   border: 1px solid rgba(255, 255, 255, .3);
   border-radius: 5px;
-  box-shadow: 1px 1px 8px 0 rgba(255, 255, 255, .5);
+  box-shadow: 1px 1px 4px 0 rgba(255, 255, 255, .5);
 }
 
 .form-modal input:focus,
 .form-modal textarea:focus {
   outline: none;
-  border-color: rgba(255, 255, 255, .8);
+  border-color: var(--colorWhite);
 }
 
 .form-modal p {
@@ -535,16 +535,16 @@ h2 {
 
 .close {
   position: absolute;
-  right: 3%;
-  top: 22%;
-  height: 20px;
-  width: 20px;
+  right: 5%;
+  top: 25%;
+  height: 80px;
+  width: 80px;
 }
 
 .close img {
-  box-shadow: 1px 1px 8px 0 rgba(255, 255, 255, .5);
   border-radius: 4px;
   width: 100%;
+  opacity: .8;
   cursor: pointer;
 }
 
