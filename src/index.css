@@ -483,6 +483,7 @@ h2 {
   height: 100%;
   width: 100%;
   background-color: #23232ebd;
+  overflow: hidden;
   z-index: 200;
 }
 
@@ -560,6 +561,35 @@ h2 {
   width: 100px;
   transition: all .4s;
   animation: ease-in-out infinite 3s iconGray;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 320px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: var(--colorBlack);
+  border-bottom: 3px solid #1dd1a1;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 0 rgba(255, 255, 255, .5);
+  transition: all .3s;
+  transform: translateX(380px);
+}
+
+.alert-open {
+  transform: translateX(0px);
+}
+
+.alert span {
+  color: var(--colorWhite);
+  text-align: center;
+  font-weight: 300;
+  font-size: .9rem;
 }
 
 .copy {
