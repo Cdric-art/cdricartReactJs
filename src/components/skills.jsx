@@ -11,7 +11,7 @@ class Skills extends React.Component {
                             <span className="bar-1"></span>
                         </div>
                         <div className="Card-Skill">
-                            <h3>CSS</h3>
+                            <h3>CSS / SASS</h3>
                             <span className="bar-1"></span>
                         </div>
                     </div>
@@ -21,7 +21,7 @@ class Skills extends React.Component {
                             <span className="bar-3"></span>
                         </div>
                         <div className="Card-Skill">
-                            <h3>JavaScript</h3>
+                            <h3>JavaScript / jQuery</h3>
                             <span className="bar-4"></span>
                         </div>
                     </div>
