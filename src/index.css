@@ -536,9 +536,9 @@ h2 {
 .close {
   position: absolute;
   right: 5%;
-  top: 25%;
-  height: 80px;
-  width: 80px;
+  top: 22%;
+  height: 60px;
+  width: 60px;
 }
 
 .close img {

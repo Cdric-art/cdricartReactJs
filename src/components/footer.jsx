@@ -20,8 +20,7 @@ class Footer extends React.Component {
         })
     }
 
-    hideModal = (e) => {
-        e.preventDefault();
+    hideModal = () => {
         this.setState({
             visible: false
         })
