@@ -21,25 +21,32 @@ class ContactMe extends React.Component {
 
     submitHandler = (e) => {
         e.preventDefault();
-        axios.post('http://www.cdricart.site/api/index.php', this.state)
-            .then(response => {
-                console.log(response)
-            })
-            .catch(error => {
-                console.log(error)
-            })
-        document.getElementById('alert').classList.add('alert-open');
-        setTimeout(() => {
-            this.props.close();
-        }, 2000)
+        if (this.state.prenom.length > 1 && this.state.mail.length > 10 && this.state.message.length > 1) {
+            axios.post('http://www.cdricart.site/api/index.php', this.state)
+                .then(response => {
+                    console.log(response)
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+            document.getElementById('alert').classList.add('alert-open');
+            document.getElementById('alert-error').classList.remove('alert-open');
+            setTimeout(() => {
+                this.props.close();
+            }, 2500)
+        } else {
+            document.getElementById('alert-error').classList.add('alert-open');
+        }
     }
-
 
     render() {
         return (
             <div className="modal">
                 <div id="alert" className="alert">
                     <span>Votre message à été envoyé.</span>
+                </div>
+                <div id="alert-error" className="alert error">
+                    <span>Formulaire incomplet</span>
                 </div>
                 <div onClick={ this.props.close } className="close">
                     <img src={ close } alt="Close"/>
@@ -48,7 +55,6 @@ class ContactMe extends React.Component {
                     <input onChange={ this.handleChange } type="text" name="prenom" placeholder="Votre prénom :"/>
                     <input onChange={ this.handleChange } type="email" name="mail" placeholder="Votre email :"/>
                     <textarea onChange={ this.handleChange } name="message" cols="30" rows="5" placeholder="Votre message :"/>
-                    <p>Prochainement fonctionnel sur IOS et Android.</p>
                     <p>Vos données personnelles (prénom et email) ne sont utilisées que pour me permettre de vous adresser une réponse et ne sont pas partagé avec des tiers.</p>
                     <button type="submit" className="btn-modal">Envoyer</button>
                 </form>
