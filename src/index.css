@@ -578,7 +578,8 @@ h2 {
   border-radius: 5px;
   box-shadow: 1px 1px 4px 0 rgba(255, 255, 255, .5);
   transition: all .3s;
-  transform: translateX(380px);
+  transform: translateX(450px);
+  opacity: 0;
 }
 
 .alert.error {
@@ -587,6 +588,7 @@ h2 {
 
 .alert-open {
   transform: translateX(0px);
+  opacity: 1;
 }
 
 .alert span {
