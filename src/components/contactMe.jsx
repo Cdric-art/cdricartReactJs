@@ -22,7 +22,12 @@ class ContactMe extends React.Component {
     submitHandler = (e) => {
         e.preventDefault();
         if (this.state.prenom.length > 1 && this.state.mail.length > 10 && this.state.message.length > 1) {
-            axios.post('http://www.cdricart.site/api/index.php', this.state)
+            axios.post('http://www.cdricart.site/api/index.php', this.state, {
+                header: {
+                    'Content-Type': 'application/json;charset=UTF-8',
+                    "Access-Control-Allow-Origin": "*"
+                }
+            })
                 .then(response => {
                     console.log(response)
                 })
