@@ -31,19 +31,6 @@ a {
   background-size: cover;
 }
 
-.Icon-React {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  height: 80px;
-  width: 80px;
-  background-image: url(../src/imgs/icon-react.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .5;
-  animation: ease-in-out infinite 8s rotateIcon;
-}
-
 h1 {
   font-size: 4.5rem;
   color: var(--colorWhite);
@@ -234,13 +221,15 @@ h2 {
 }
 
 .cv img {
+  width: 40px;
+  height: 40px;
   background-color: var(--colorWhite);
   border-radius: 3px;
   transition: all .4s;
 }
 
 .cv img:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
 
 
