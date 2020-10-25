@@ -6,7 +6,7 @@ class Title extends React.Component {
         super(props)
         this.state = {
             title: 'Je suis',
-            new: ' Développeur Intégrateur Web.'
+            new: ' Développeur Intégrateur React.Js'
         }
         this.timer = null
         this.i = 0
