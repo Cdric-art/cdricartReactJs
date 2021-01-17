@@ -324,7 +324,7 @@ h2 {
 
 .Card-Skill .bar-5::after {
   content: '';
-  width: 60%;
+  width: 50%;
   height: 100%;
   position: absolute;
   top: 0;

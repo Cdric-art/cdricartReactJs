@@ -1,6 +1,12 @@
 import React from "react";
 import close from "../imgs/close.png";
-import * as axios from "axios";
+import emailjs ,{ init } from 'emailjs-com';
+
+const userId = process.env.REACT_APP_USER_ID;
+const serviceId = process.env.REACT_APP_SERVICE_ID;
+const templateId = process.env.REACT_APP_TEMPLATE_ID;
+
+init(userId);
 
 class ContactMe extends React.Component {
 
@@ -22,18 +28,11 @@ class ContactMe extends React.Component {
     submitHandler = (e) => {
         e.preventDefault();
         if (this.state.prenom.length > 1 && this.state.mail.length > 10 && this.state.message.length > 1) {
-            axios.post('https://www.cdricart.site/api/index.php', this.state, {
-                header: {
-                    'Content-Type': 'application/json;charset=UTF-8',
-                    "Access-Control-Allow-Origin": "*"
-                }
-            })
-                .then(response => {
-                    console.log(response)
-                })
-                .catch(error => {
-                    console.log(error)
-                })
+
+            emailjs.send(serviceId, templateId, this.state)
+                .then(res => console.log('SUCCESS !', res.status, res.text))
+                .catch(e => console.log('FAILED... !', e))
+
             document.getElementById('alert').classList.add('alert-open');
             document.getElementById('alert-error').classList.remove('alert-open');
             setTimeout(() => {
@@ -56,7 +55,7 @@ class ContactMe extends React.Component {
                 <div onClick={ this.props.close } className="close">
                     <img src={ close } alt="Close"/>
                 </div>
-                <form onSubmit={ this.submitHandler } className="form-modal" method="POST">
+                <form onSubmit={ this.submitHandler } className="form-modal">
                     <input onChange={ this.handleChange } type="text" name="prenom" placeholder="Votre prénom :"/>
                     <input onChange={ this.handleChange } type="email" name="mail" placeholder="Votre email :"/>
                     <textarea onChange={ this.handleChange } name="message" cols="30" rows="5" placeholder="Votre message :"/>

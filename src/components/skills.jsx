@@ -8,32 +8,32 @@ class Skills extends React.Component {
                     <div className="Row">
                         <div className="Card-Skill">
                             <h3>HTML</h3>
-                            <span className="bar-1"></span>
+                            <span className="bar-1"/>
                         </div>
                         <div className="Card-Skill">
                             <h3>CSS / SASS</h3>
-                            <span className="bar-1"></span>
+                            <span className="bar-1"/>
                         </div>
                     </div>
                     <div className="Row">
-                        <div className="Card-Skill">
-                            <h3>Bootstrap</h3>
-                            <span className="bar-3"></span>
-                        </div>
-                        <div className="Card-Skill">
-                            <h3>JavaScript / jQuery</h3>
-                            <span className="bar-4"></span>
-                        </div>
-                    </div>
-                    <div className="Row">
-                        <div className="Card-Skill">
-                            <h3>PHP</h3>
-                            <span className="bar-5"></span>
-                        </div>
                         <div className="Card-Skill React">
                             <img src={ Star } alt="Etoile favori"/>
                             <h3>ReactJs</h3>
-                            <span className="bar-6"></span>
+                            <span className="bar-4"/>
+                        </div>
+                        <div className="Card-Skill">
+                            <h3>JavaScript</h3>
+                            <span className="bar-4"/>
+                        </div>
+                    </div>
+                    <div className="Row">
+                        <div className="Card-Skill">
+                            <h3>NodeJS / Express</h3>
+                            <span className="bar-5"/>
+                        </div>
+                        <div className="Card-Skill">
+                            <h3>MongoDB / GraphQL / SQL</h3>
+                            <span className="bar-5"/>
                         </div>
                     </div>
                 </div>

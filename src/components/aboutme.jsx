@@ -12,7 +12,7 @@ class Aboutme extends React.Component {
                  <div id="about" className="wrapper-card">
 
                         <article className="card">
-                            <div className="favicon"></div>
+                            <div className="favicon"/>
                             <p>
                             Je suis un jeune développeur intégrateur web de 29 ans, habitant à Paris dans le 6eme arrondissement. <span>Après avoir été autodidacte de nombreux mois dans ce domaine, j'ai commencé récemment une formation proposée par l’IFOCOP.</span> A l’issue de celle-ci, j’aurai acquis les dernières compétences qu’il me manque pour réaliser à bien ma reconversion professionnelle et devenir un développeur web accompli. 
                             </p>
@@ -35,8 +35,10 @@ class Aboutme extends React.Component {
                      <article className="experience">
                         <div className="listExp">
                             <ul>
-                                <li><span>In progress</span> - Développeur Intégrateur Web - <span>IFOCOP</span></li>
-                                <li><span>In progress</span> - ReactJs - <span>OpenClassRooms</span></li>
+                                <li><span>En cours</span> - NodeJs Express MongoDB - <span>OpenClassRooms</span></li>
+                                <li><span>Septembre 2020 - Janvier 2021</span> - Stage Développeur Web ReactJs - <span>Whire</span></li>
+                                <li><span>Juin 2020 - Janvier 2021</span> - Formation Développeur Intégrateur Web - <span>IFOCOP</span></li>
+                                <li><span>Juillet 2020 : Septembre 2020</span> - ReactJs - <span>OpenClassRooms</span></li>
                                 <li><span>Janvier 2020 : Mars 2020</span> - JavaScript - <span>Udemy, OpenClassRooms</span></li>
                                 <li><span>Octobre 2019 : Janvier 2020</span> - Développeur Intégrateur Web - <span>Udemy</span></li>
                             </ul>
