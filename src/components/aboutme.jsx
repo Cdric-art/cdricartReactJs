@@ -8,9 +8,7 @@ class Aboutme extends React.Component {
     render() {
         return (
              <div className="Aboutme">
-
                  <div id="about" className="wrapper-card">
-
                         <article className="card">
                             <div className="favicon"/>
                             <p>
@@ -28,19 +26,18 @@ class Aboutme extends React.Component {
                                 </a>
                             </div>
                         </article>
-                    
                  </div>
-
                  <div className="wrapper-exp">
                      <article className="experience">
                         <div className="listExp">
                             <ul>
-                                <li><span>En cours</span> - NodeJs Express MongoDB - <span>OpenClassRooms</span></li>
+                                <li><span>Février 2021</span> - AdonisJs - <span>Autodidact</span></li>
+                                <li><span>Janvier 2021 - Février 2021</span> - NodeJs Express MongoDB - <span>OpenClassRooms</span></li>
                                 <li><span>Septembre 2020 - Janvier 2021</span> - Stage Développeur Web ReactJs - <span>Whire</span></li>
                                 <li><span>Juin 2020 - Janvier 2021</span> - Formation Développeur Intégrateur Web - <span>IFOCOP</span></li>
-                                <li><span>Juillet 2020 : Septembre 2020</span> - ReactJs - <span>OpenClassRooms</span></li>
-                                <li><span>Janvier 2020 : Mars 2020</span> - JavaScript - <span>Udemy, OpenClassRooms</span></li>
-                                <li><span>Octobre 2019 : Janvier 2020</span> - Développeur Intégrateur Web - <span>Udemy</span></li>
+                                <li><span>Juillet 2020 - Septembre 2020</span> - ReactJs - <span>OpenClassRooms, Grafikart</span></li>
+                                <li><span>Janvier 2020 - Mars 2020</span> - JavaScript - <span>Udemy, OpenClassRooms, Grafikart</span></li>
+                                <li><span>Octobre 2019 - Janvier 2020</span> - Développeur Intégrateur Web - <span>Udemy</span></li>
                             </ul>
                         </div>
                         <div className="cv">
@@ -50,7 +47,6 @@ class Aboutme extends React.Component {
                         </div>
                      </article>
                  </div>
-
              </div>
         );
     }

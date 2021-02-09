@@ -3,7 +3,7 @@ import Linkedin from '../imgs/linkedin.png';
 import Github from '../imgs/github.png';
 import Twitter from '../imgs/twitter.png';
 import ArrowUp from '../imgs/arrow.png';
-import ContactMe from './contactMe';
+import ContactMe from "./contactMe";
 
 class Footer extends React.Component {
 

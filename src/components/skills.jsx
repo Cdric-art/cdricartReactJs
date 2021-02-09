@@ -18,7 +18,7 @@ class Skills extends React.Component {
                     <div className="Row">
                         <div className="Card-Skill React">
                             <img src={ Star } alt="Etoile favori"/>
-                            <h3>ReactJs</h3>
+                            <h3>ReactJs / Redux</h3>
                             <span className="bar-4"/>
                         </div>
                         <div className="Card-Skill">
@@ -28,8 +28,8 @@ class Skills extends React.Component {
                     </div>
                     <div className="Row">
                         <div className="Card-Skill">
-                            <h3>NodeJS / Express</h3>
-                            <span className="bar-5"/>
+                            <h3>NodeJS / ExpressJS - AdonisJS</h3>
+                            <span className="bar-4"/>
                         </div>
                         <div className="Card-Skill">
                             <h3>MongoDB / GraphQL / SQL</h3>
