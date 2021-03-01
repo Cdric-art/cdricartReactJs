@@ -1,6 +1,9 @@
 :root {
   --colorWhite: #ecf0f1;
   --colorBlack: #2c3e50;
+  --colorBlue: #04ADE2;
+  --colorDark: #23232E;
+  --colorDark2: #23232ebd;
 }
 
 * {
@@ -54,14 +57,14 @@ h2 {
 
 /* *** MAIN *** COMPONENT MAIN.JSX */
 .Main {
-  background-color: #04ADE2;
+  background-color: var(--colorBlue);
 }
 
 /* *** NAVBAR *** SOUS-COMPONENT NAVBAR.JSX de MAIN.JSX */
 .Navbar {
   position: sticky;
   top: 0;
-  background-color: #23232E;
+  background-color: var(--colorBlack);
   box-shadow: 0 2px 5px 0 rgba(35,35,46,1);
   z-index: 1000;
 }
@@ -163,7 +166,7 @@ h2 {
 }
 
 .card p span {
-  color: #04ADE2;
+  color: var(--colorBlue);
   font-weight: 400;
 }
 
@@ -212,7 +215,7 @@ h2 {
 }
 
 .listExp ul li span {
-  color: #04ADE2;
+  color: var(--colorBlue);
   font-weight: 700;
 }
 
@@ -284,7 +287,7 @@ h2 {
   width: 250px;
   height: 15px;
   margin: 0 auto;
-  background-color: #04ADE2;
+  background-color: var(--colorBlue);
   border-radius: 5px;
   box-shadow: 1px 1px 8px 0 rgba(35, 35, 46, 1);
 }
@@ -347,76 +350,11 @@ h2 {
 
 /* *** MY PROJECTS *** SOUS-COMPONENT DE MAIN.JSX */
 
-#projets {
+.projects {
+  min-height: 80vh;
   overflow: hidden;
 }
 
-.wrapper-projets {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #23232ebd;
-  border-radius: 5px;
-  box-shadow: 1px 1px 8px 0 rgba(35, 35, 46, 1);
-  max-width: 700px;
-  margin: 70px auto 100px auto;
-  padding: 50px;
-  z-index: 1;
-}
-
-.wrapper-projets::before {
-  content: '';
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  background-image: url(assets/icons/fusee.png);
-  transform: rotate(-45deg);
-  animation: ease-in-out infinite 7s fusee-projet;
-  z-index: -1;
-}
-
-.wrapper-projets img {
-  width: 100%;
-  border-radius: 3px;
-  box-shadow: 1px 1px 8px 0 rgba(255, 255, 255, .1);
-  transition: all .4s;
-}
-
-.wrapper-projets img:hover {
-  transform: scale(1.1);
-}
-
-.text p {
-  color: var(--colorWhite);
-  text-align: center;
-  font-weight: 300;
-  line-height: 1.5rem;
-  padding: 40px 20px 20px 20px;
-}
-
-.text p span {
-  color: #04ADE2;
-  font-weight: 400;
-}
-
-.arrow {
-  width: 50px;
-  margin: 0 auto;
-  padding-top: 80px;
-  cursor: pointer;
-}
-
-.arrow img {
-  width: 50px;
-  height: 50px;
-  transition: all .4s;
-}
-
-.arrow img:hover {
-  transform: scale(1.2);
-}
 
 
 /* *** FOOTER SOUS-COMPONENT DE APP.JS *** */
@@ -436,7 +374,7 @@ h2 {
   align-items: center;
   margin-bottom: 50px;
   padding: 20px;
-  background-color: #23232ebd;
+  background-color: var(--colorDark2);
   color: var(--colorWhite);
   font-size: 1.7rem;
   line-height: 3rem;
@@ -445,7 +383,7 @@ h2 {
 
 .info a {
   font-weight: bold;
-  color: #04ADE2;
+  color: var(--colorBlue);
   padding: 20px;
 }
 
@@ -471,7 +409,7 @@ h2 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #23232ebd;
+  background-color: var(--colorDark2);
   overflow: hidden;
   z-index: 200;
 }
@@ -597,7 +535,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   background-color: #B8E9F0;
-  color: #23232ebd;
+  color: var(--colorDark2);
   font-size: .7rem;
   font-style: italic;
   padding-left: 20px;
