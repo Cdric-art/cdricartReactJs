@@ -1,8 +1,8 @@
 import React from 'react';
-import Linkedin from '../imgs/linkedin.png';
-import Github from '../imgs/github.png';
-import Twitter from '../imgs/twitter.png';
-import ArrowUp from '../imgs/arrow.png';
+import Linkedin from '../assets/icons/linkedin.png';
+import Github from '../assets/icons/github.png';
+import Twitter from '../assets/icons/twitter.png';
+import ArrowUp from '../assets/icons/arrow.png';
 import ContactMe from "./contactMe";
 
 class Footer extends React.Component {

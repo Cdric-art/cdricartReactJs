@@ -1,5 +1,5 @@
 import React from "react";
-import close from "../imgs/close.png";
+import close from "../assets/icons/close.png";
 import emailjs ,{ init } from 'emailjs-com';
 
 const userId = process.env.REACT_APP_USER_ID;

@@ -1,15 +1,15 @@
 import React from 'react';
-import Arrow from '../imgs/arrow.png';
+import Arrow from '../assets/icons/arrow.png';
 
 
 class Project extends React.Component {
 
     constructor (props) {
         super(props)
-        const img0 = require('../imgs/fiasco.gif');
-        const img1 = require('../imgs/card3d.gif');
-        const img2 = require('../imgs/reseau.gif');
-        const img3 = require('../imgs/hotelcop.gif');
+        const img0 = require('../assets/icons/fiasco.gif');
+        const img1 = require('../assets/icons/card3d.gif');
+        const img2 = require('../assets/icons/reseau.gif');
+        const img3 = require('../assets/icons/hotelcop.gif');
 
         this.Change = this.Change.bind(this)
 
@@ -29,7 +29,7 @@ class Project extends React.Component {
         }
     }
 
-    Change () { 
+    Change () {
         if (this.state.index + 1 === this.state.imgList.length || this.state.indexP + 1 === this.state.paragraph.length) {
             this.setState ({
                 index: 0,
@@ -57,7 +57,7 @@ class Project extends React.Component {
                     <div className="text">
                         { this.state.paragraph[this.state.indexP] }
                     </div>
-                </div>       
+                </div>
             </div>
         )
     }

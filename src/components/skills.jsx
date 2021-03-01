@@ -1,5 +1,5 @@
 import React from 'react';
-import Star from '../imgs/etoile.png';
+import Star from '../assets/icons/etoile.png';
 
 class Skills extends React.Component {
     render () {
