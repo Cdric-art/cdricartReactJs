@@ -242,6 +242,7 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   background-image: url(assets/icons/space-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -354,23 +355,94 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 
 .wrapper-projects {
-  max-width: 70vw;
+  max-width: 900px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
+  margin: 10vh auto;
+  transition: all .3s;
+}
+
+.wrapper-projects.active {
+  grid-gap: 1rem;
 }
 
 .project-item {
+  position: relative;
   background-color: var(--colorWhite);
   border-radius: 3px;
   padding: 1.5rem;
+  box-shadow: 1px 1px 8px 0 rgba(35,35,46,0.5);
+  cursor: pointer;
 }
 
+.project-item::after {
+  content: url("./assets/icons/arrow.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 56, 90, 0.3);
+  height: 0;
+  opacity: 0;
+  text-align: center;
+  padding-top: 30%;
+  transition: all .3s ease;
+}
+
+.project-item:hover::after {
+  height: 63%;
+  opacity: 1;
+}
+
+.project-item img {
+  display: block;
+  width: 100%;
+  min-height: 190px;
+}
+
+.project-item h3 {
+  font-size: 1.5rem;
+  color: var(--colorBlack);
+  padding: 10px;
+}
+
+.project-item span {
+  display: block;
+  width: 50px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: var(--colorBlue);
+  margin-left: 10px;
+}
+
+.project-item p {
+  color: var(--colorDark2);
+  padding: 10px 10px 0 10px;
+}
+
+.wrapper-details {
+  height: 100%;
+  width: 0;
+  padding: 1rem;
+  background-color: var(--colorWhite);
+  box-shadow: 1px 1px 8px 0 rgba(35,35,46,0.5);
+  transform: translateX(375px);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.wrapper-details.active {
+  width: 375px;
+  transform: translateX(0);
+  opacity: 1;
+}
 
 /* *** FOOTER SOUS-COMPONENT DE APP.JS *** */
 
@@ -696,13 +768,6 @@ h2 {
   .wrapper-card::before {
     display: none;
   }
-  /* .wrapper-projets::before {
-    display: none;
-  } */
-
-  #projets {
-    height: 900px;
-  }
 
 }
 
@@ -711,8 +776,14 @@ h2 {
   /* *** SKILLS *** */
 
   .Skills {
-    flex-direction: column;
     height: 100%;
+  }
+
+  /* *** PROJECTS *** */
+  .wrapper-projects {
+    max-width: 80%;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
   }
 
 }
