@@ -351,10 +351,25 @@ h2 {
 /* *** MY PROJECTS *** SOUS-COMPONENT DE MAIN.JSX */
 
 .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 80vh;
   overflow: hidden;
 }
 
+.wrapper-projects {
+  max-width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+.project-item {
+  background-color: var(--colorWhite);
+  border-radius: 3px;
+  padding: 1.5rem;
+}
 
 
 /* *** FOOTER SOUS-COMPONENT DE APP.JS *** */
