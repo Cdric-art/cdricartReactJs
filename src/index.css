@@ -36,7 +36,6 @@ a {
 h1 {
   font-size: 4.5rem;
   color: var(--colorWhite);
-  text-transform: uppercase;
   padding: 20px;
   margin-bottom: 30px;
 }

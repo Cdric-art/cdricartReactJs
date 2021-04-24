@@ -5,8 +5,8 @@ class Title extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-            title: 'Je suis',
-            new: ' Développeur Intégrateur React.Js'
+            title: '',
+            new: 'Développeur React - React Native'
         }
         this.timer = null
         this.i = 0
@@ -22,7 +22,7 @@ class Title extends React.Component {
             const el = document.getElementById('title')
             el.style.transition  = 'all 2s'
             el.style.color = '#04ADE2'
-        }   
+        }
     }
 
     componentDidMount () {

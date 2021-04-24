@@ -4,12 +4,11 @@ import Title from '../components/title';
 
 function Header () {
 
-    return ( 
-        
+    return (
+
             <div className="Header">
 
-                <div className="Icon-React"></div>
-                <h1>Je m'appelle Cédric,</h1>
+                <h1>Cédric,</h1>
                 <Title />
                 <a className="Mail" href="mailto:cdric.art@gmail.com">cdric.art@gmail.com<span> || Paris VI</span></a>
 
