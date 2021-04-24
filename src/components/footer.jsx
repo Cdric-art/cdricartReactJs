@@ -55,14 +55,9 @@ class Footer extends React.Component {
                         </a>
                     </div>
                 </div>
-                <div className="arrow-up">
-                    <a href={"index.html"}>
-                        <img src={ ArrowUp } alt="Arrow Up"/>
-                    </a>
-                </div>
                 <div className="copy">
                     <p>&copy; Created by Cdric_art</p>
-                    <p>August 2020</p>
+                    <p>April 2021</p>
                 </div>
             </div>
         );
