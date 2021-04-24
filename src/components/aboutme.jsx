@@ -1,7 +1,5 @@
 import React from 'react';
 import whireimg from '../assets/icons/whire.png';
-import cvIcon from '../assets/icons/cv-icon.png';
-import cv from '../download/CV-EVRARDCedric.pdf';
 
 
 class Aboutme extends React.Component {
@@ -31,6 +29,7 @@ class Aboutme extends React.Component {
                      <article className="experience">
                         <div className="listExp">
                             <ul>
+                                <li><span>Mars 2021 - In progress</span> - React Native - <span>Autodidact</span></li>
                                 <li><span>Février 2021</span> - AdonisJs - <span>Autodidact</span></li>
                                 <li><span>Janvier 2021 - Février 2021</span> - NodeJs Express MongoDB - <span>OpenClassRooms</span></li>
                                 <li><span>Septembre 2020 - Janvier 2021</span> - Stage Développeur Web ReactJs - <span>Whire</span></li>
@@ -40,11 +39,11 @@ class Aboutme extends React.Component {
                                 <li><span>Octobre 2019 - Janvier 2020</span> - Développeur Intégrateur Web - <span>Udemy</span></li>
                             </ul>
                         </div>
-                        <div className="cv">
-                            <a href={ cv } rel="noopener noreferrer" target="_blank">
-                                <img src={ cvIcon } alt="Mon Cv"/>
-                            </a>
-                        </div>
+                        {/*<div className="cv">*/}
+                        {/*    <a href={ cv } rel="noopener noreferrer" target="_blank">*/}
+                        {/*        <img src={ cvIcon } alt="Mon Cv"/>*/}
+                        {/*    </a>*/}
+                        {/*</div>*/}
                      </article>
                  </div>
              </div>
